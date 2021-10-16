@@ -1,0 +1,23 @@
+[2021-10-16 13:50:02,605] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: movie_chooser_dag.choose_movie_1 scheduled__2021-10-16T13:48:00+00:00 [queued]>
+[2021-10-16 13:50:02,628] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: movie_chooser_dag.choose_movie_1 scheduled__2021-10-16T13:48:00+00:00 [queued]>
+[2021-10-16 13:50:02,629] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-16 13:50:02,629] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-10-16 13:50:02,629] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-16 13:50:02,682] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): choose_movie_1> on 2021-10-16 13:48:00+00:00
+[2021-10-16 13:50:02,696] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'movie_chooser_dag', 'choose_movie_1', 'scheduled__2021-10-16T13:48:00+00:00', '--job-id', '715', '--raw', '--subdir', 'DAGS_FOLDER/third_dag.py', '--cfg-path', '/tmp/tmpkkrlbndo', '--error-file', '/tmp/tmp2asd0pl5']
+[2021-10-16 13:50:02,697] {standard_task_runner.py:77} INFO - Job 715: Subtask choose_movie_1
+[2021-10-16 13:50:02,691] {standard_task_runner.py:52} INFO - Started process 3265 to run task
+[2021-10-16 13:50:02,765] {logging_mixin.py:109} INFO - Running <TaskInstance: movie_chooser_dag.choose_movie_1 scheduled__2021-10-16T13:48:00+00:00 [running]> on host e03fb9e01fd8
+[2021-10-16 13:50:02,845] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=movie_chooser_dag
+AIRFLOW_CTX_TASK_ID=choose_movie_1
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-16T13:48:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-10-16T13:48:00+00:00
+[2021-10-16 13:50:02,860] {python.py:152} INFO - Done. Returned value was: Across the Universe,romance,Independent,84,0.652603178,54,$29.37 ,2007
+
+[2021-10-16 13:50:02,904] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=movie_chooser_dag, task_id=choose_movie_1, execution_date=20211016T134800, start_date=20211016T135002, end_date=20211016T135002
+[2021-10-16 13:50:02,957] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-10-16 13:50:03,023] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

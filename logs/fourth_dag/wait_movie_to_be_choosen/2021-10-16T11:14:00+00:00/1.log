@@ -1,0 +1,27 @@
+[2021-10-16 13:04:09,490] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: fourth_dag.wait_movie_to_be_choosen scheduled__2021-10-16T11:14:00+00:00 [queued]>
+[2021-10-16 13:04:09,536] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: fourth_dag.wait_movie_to_be_choosen scheduled__2021-10-16T11:14:00+00:00 [queued]>
+[2021-10-16 13:04:09,539] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-16 13:04:09,540] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-10-16 13:04:09,540] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-16 13:04:09,642] {taskinstance.py:1262} INFO - Executing <Task(ExternalTaskSensor): wait_movie_to_be_choosen> on 2021-10-16 11:14:00+00:00
+[2021-10-16 13:04:09,667] {standard_task_runner.py:52} INFO - Started process 196 to run task
+[2021-10-16 13:04:09,703] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fourth_dag', 'wait_movie_to_be_choosen', 'scheduled__2021-10-16T11:14:00+00:00', '--job-id', '141', '--raw', '--subdir', 'DAGS_FOLDER/fourth_dag.py', '--cfg-path', '/tmp/tmp3cor2c5o', '--error-file', '/tmp/tmp4kpprkvc']
+[2021-10-16 13:04:09,703] {standard_task_runner.py:77} INFO - Job 141: Subtask wait_movie_to_be_choosen
+[2021-10-16 13:04:09,920] {logging_mixin.py:109} INFO - Running <TaskInstance: fourth_dag.wait_movie_to_be_choosen scheduled__2021-10-16T11:14:00+00:00 [running]> on host e03fb9e01fd8
+[2021-10-16 13:04:10,208] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fourth_dag
+AIRFLOW_CTX_TASK_ID=wait_movie_to_be_choosen
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-16T11:14:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-10-16T11:14:00+00:00
+[2021-10-16 13:04:10,215] {warnings.py:99} WARNING - /home/***/.local/lib/python3.6/site-packages/***/models/taskinstance.py:1917: DeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' instead.
+  warnings.warn(message, DeprecationWarning)
+
+[2021-10-16 13:04:10,215] {external_task.py:173} INFO - Poking for tasks None in dag movie_chooser_dag on 2021-10-16T11:14:00+00:00 ... 
+[2021-10-16 13:05:10,288] {external_task.py:173} INFO - Poking for tasks None in dag movie_chooser_dag on 2021-10-16T11:14:00+00:00 ... 
+[2021-10-16 13:05:10,323] {base.py:249} INFO - Success criteria met. Exiting.
+[2021-10-16 13:05:10,864] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=fourth_dag, task_id=wait_movie_to_be_choosen, execution_date=20211016T111400, start_date=20211016T130409, end_date=20211016T130510
+[2021-10-16 13:05:10,938] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-10-16 13:05:11,120] {local_task_job.py:264} INFO - 3 downstream tasks scheduled from follow-on schedule check

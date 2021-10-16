@@ -1,0 +1,23 @@
+[2021-10-16 13:05:09,581] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: movie_chooser_dag.choose_movie_2 scheduled__2021-10-16T12:36:00+00:00 [queued]>
+[2021-10-16 13:05:09,655] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: movie_chooser_dag.choose_movie_2 scheduled__2021-10-16T12:36:00+00:00 [queued]>
+[2021-10-16 13:05:09,656] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-16 13:05:09,656] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-10-16 13:05:09,656] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-16 13:05:09,733] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): choose_movie_2> on 2021-10-16 12:36:00+00:00
+[2021-10-16 13:05:09,763] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'movie_chooser_dag', 'choose_movie_2', 'scheduled__2021-10-16T12:36:00+00:00', '--job-id', '328', '--raw', '--subdir', 'DAGS_FOLDER/third_dag.py', '--cfg-path', '/tmp/tmpj6c9qxm7', '--error-file', '/tmp/tmpxnvkaryf']
+[2021-10-16 13:05:09,788] {standard_task_runner.py:77} INFO - Job 328: Subtask choose_movie_2
+[2021-10-16 13:05:09,755] {standard_task_runner.py:52} INFO - Started process 611 to run task
+[2021-10-16 13:05:09,943] {logging_mixin.py:109} INFO - Running <TaskInstance: movie_chooser_dag.choose_movie_2 scheduled__2021-10-16T12:36:00+00:00 [running]> on host e03fb9e01fd8
+[2021-10-16 13:05:10,117] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=movie_chooser_dag
+AIRFLOW_CTX_TASK_ID=choose_movie_2
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-16T12:36:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-10-16T12:36:00+00:00
+[2021-10-16 13:05:10,154] {python.py:152} INFO - Done. Returned value was: Jane Eyre,Romance,Universal,77,0,85,$30.15 ,2011
+
+[2021-10-16 13:05:10,286] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=movie_chooser_dag, task_id=choose_movie_2, execution_date=20211016T123600, start_date=20211016T130509, end_date=20211016T130510
+[2021-10-16 13:05:10,392] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-10-16 13:05:10,502] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

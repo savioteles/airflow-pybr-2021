@@ -1,0 +1,22 @@
+[2021-10-16 13:05:36,527] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: fourth_dag.get_gross_year_1 scheduled__2021-10-16T12:10:00+00:00 [queued]>
+[2021-10-16 13:05:36,603] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: fourth_dag.get_gross_year_1 scheduled__2021-10-16T12:10:00+00:00 [queued]>
+[2021-10-16 13:05:36,603] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-16 13:05:36,603] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-10-16 13:05:36,610] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-16 13:05:36,697] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): get_gross_year_1> on 2021-10-16 12:10:00+00:00
+[2021-10-16 13:05:36,773] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fourth_dag', 'get_gross_year_1', 'scheduled__2021-10-16T12:10:00+00:00', '--job-id', '450', '--raw', '--subdir', 'DAGS_FOLDER/fourth_dag.py', '--cfg-path', '/tmp/tmpo0ehdnpn', '--error-file', '/tmp/tmpfgazdzp8']
+[2021-10-16 13:05:36,774] {standard_task_runner.py:77} INFO - Job 450: Subtask get_gross_year_1
+[2021-10-16 13:05:36,732] {standard_task_runner.py:52} INFO - Started process 865 to run task
+[2021-10-16 13:05:37,053] {logging_mixin.py:109} INFO - Running <TaskInstance: fourth_dag.get_gross_year_1 scheduled__2021-10-16T12:10:00+00:00 [running]> on host e03fb9e01fd8
+[2021-10-16 13:05:37,294] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fourth_dag
+AIRFLOW_CTX_TASK_ID=get_gross_year_1
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-16T12:10:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-10-16T12:10:00+00:00
+[2021-10-16 13:05:37,336] {python.py:152} INFO - Done. Returned value was: ['$54.53 ', '2010\n']
+[2021-10-16 13:05:37,465] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=fourth_dag, task_id=get_gross_year_1, execution_date=20211016T121000, start_date=20211016T130536, end_date=20211016T130537
+[2021-10-16 13:05:37,617] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-10-16 13:05:37,927] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
